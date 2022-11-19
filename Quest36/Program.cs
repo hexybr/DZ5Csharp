@@ -11,7 +11,7 @@ FillArray(blessrnd);
 PrintArray(blessrnd);
 Counter(blessrnd);
 
-void FillArray(int[] blessrnd)// Заполнение массива случайными положительными трехзначными числами
+void FillArray(int[] blessrnd)// Заполнение массива случайными числами
 {
     Random rnd = new Random();
     for (index = 0; index < blessrnd.Length; index++)
@@ -29,7 +29,7 @@ void PrintArray(int[] blessrnd)// Вывод получившегося масс
     }
     Console.WriteLine();
 }
-void Counter(int[] rnd)
+void Counter(int[] rnd)// Функция подсчета суммы элементов с нечетным индексом
 {
     int count = 0;
     for (int i = 1; i < rnd.Length; i = i + 2)
